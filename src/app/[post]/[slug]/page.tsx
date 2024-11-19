@@ -1,3 +1,6 @@
+// UI Components
+import Comic from "@post/ui/comic"
+
 /**
  * # Post Page
  * 
@@ -5,8 +8,6 @@
  * 
  * @returns {JSX.Element} PostType UI
  */
-
-import Comic from "@post/ui/comic"
 
 export default function Page() {
 	return <Comic />
