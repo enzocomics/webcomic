@@ -1,0 +1,10 @@
+services:
+  # Build the Docker image for the Next.js App
+  webcomic:
+    container_name: webcomic
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_ENV_TEST="hello world"
