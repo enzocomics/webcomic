@@ -1,7 +1,7 @@
 /**
  * # Homepage
  * 
- * - A page is UI that is unique to a route.
+ * The UI unique to the homepage.
  * 
  * @returns {JSX.Element} homepage UI
  * 
