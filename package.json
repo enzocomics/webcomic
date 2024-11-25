@@ -2,6 +2,7 @@
 	"dependencies": {
 		"next": "^15.0.3",
 		"next-runtime-env": "^3.2.2",
+		"nprogress": "github:enzocomics/nprogress",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1"
 	},
