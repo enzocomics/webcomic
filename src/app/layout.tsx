@@ -1,5 +1,8 @@
 // Tailwind Global Style
 import '@/styles/globals.css'
+// UI
+import LoadingBar from "./_ui/loading-bar"
+import Link from "next/link"
 
 /**
  * # Root Layout
@@ -18,12 +21,15 @@ export default function RootLayout({
 }) {
 	// Output
 	return <html lang="en">
-		<body>
+		<body className="bg-gray-900 text-white">
+			<LoadingBar />
 			<header>
 				Header
 			</header>
 			<main>
 				{children}
+				<p><Link href="/">Home</Link></p>
+				<p><Link href="/page">Another page</Link></p>
 			</main>
 			<footer>
 				Footer
