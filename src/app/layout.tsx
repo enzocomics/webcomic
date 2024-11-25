@@ -1,8 +1,9 @@
-// Tailwind Global Style
-import '@/styles/globals.css'
+/**----------------------------------- */
+// Styles
+import '@/styles/global.css'
 // UI
-import LoadingBar from "./_ui/loading-bar"
 import Link from "next/link"
+import LoadingBar from "./_ui/loading-bar"
 
 /**
  * # Root Layout
