@@ -1,6 +1,6 @@
 /**----------------------------------- */
 // Styles
-import '@/styles/global.css'
+import '$/styles/global.css'
 // UI
 import Link from "next/link"
 import LoadingBar from "./_ui/loading-bar"
@@ -23,7 +23,7 @@ export default function RootLayout({
 	// Output
 	return <html lang="en">
 		<body className="bg-gray-900 text-white">
-			<LoadingBar />
+			<LoadingBar className="fixed top-0 w-full h-1 [&:not(.nprogress-busy_&)]:bg-white" />
 			<header>
 				Header
 			</header>
