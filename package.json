@@ -1,24 +1,18 @@
 {
-	"dependencies": {
-		"next": "^15.0.3",
-		"next-nprogress-bar": "github:enzocomics/next-nprogress-bar",
-		"next-runtime-env": "^3.2.2",
-		"nprogress": "github:enzocomics/nprogress",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1"
-	},
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint"
 	},
+	"dependencies": {
+		"next": "^15.1.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0"
+	},
 	"devDependencies": {
-		"@types/node": "^22.9.3",
-		"@types/react": "18.3.12",
-		"autoprefixer": "^10.4.20",
-		"postcss": "^8.4.49",
-		"tailwindcss": "^3.4.15",
-		"typescript": "^5.7.2"
+		"@types/node": "22.10.2",
+		"@types/react": "19.0.1",
+		"typescript": "5.7.2"
 	}
 }
