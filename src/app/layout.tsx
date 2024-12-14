@@ -1,3 +1,7 @@
+
+import { Params } from "next/dist/server/request/params"
+import "$/styles/global.css"
+
 /**
  * # Root Layout
  * 
@@ -5,12 +9,10 @@
  *  * 
  */
 
-import { Params } from "next/dist/server/request/params"
-
 export default function RootLayout(params: Params) {
 	return (
 		<html>
-			<body>
+			<body className="bg-red-500">
 				{params.children}
 			</body>
 		</html>
