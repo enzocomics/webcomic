@@ -1,0 +1,4 @@
+*.code-workspace
+.env.*
+.git
+node_modules
