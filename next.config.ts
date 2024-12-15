@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
 	output: "standalone",
@@ -7,17 +7,9 @@ const nextConfig: NextConfig = {
 			{
 				hostname: "localhost",
 			},
-			{
-				protocol: "https",
-				hostname: "stage.directus.cuek.co",
-			},
-			{
-				protocol: "https",
-				hostname: "cms.cuek.co",
-			},
 		],
 	},
 	staticPageGenerationTimeout: 30,
-};
+}
 
-export default nextConfig;
+export default nextConfig
