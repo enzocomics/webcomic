@@ -5,6 +5,7 @@ import { I18nProviderClient } from "@/lib/i18n/client"
 import { getStaticParams } from "@/lib/i18n/server"
 
 // STYLES 
+import { copy, display } from "@/styles/fonts"
 import "@/styles/global.css"
 
 /**
@@ -24,8 +25,8 @@ export default async function RootLayout({ params, children }: {
 
 	// OUTPUT
 	return (
-		<html>
-			<body className="bg-red-500">
+		<html className={`scroll-smooth ${copy.variable} ${display.variable}`}>
+			<body>
 				{/* NEXT-INTERNATIONAL PROVIDER */}
 				<I18nProviderClient locale={locale}>
 					{children}
