@@ -1,6 +1,9 @@
 /**----------------------------------- */
-// STYLES 
+// I18N
+import { setStaticParamsLocale } from "next-international/server"
 import { I18nProviderClient } from "@/lib/i18n/client"
+import { getStaticParams } from "@/lib/i18n/server"
+// STYLES 
 import "@/styles/global.css"
 
 /**
@@ -15,6 +18,8 @@ export default async function RootLayout({ params, children }: {
 	children: React.ReactNode
 }) {
 	const { locale } = await params
+	setStaticParamsLocale(locale)
+
 	return (
 		<html>
 			<body className="bg-red-500">
@@ -24,4 +29,8 @@ export default async function RootLayout({ params, children }: {
 			</body>
 		</html>
 	)
+}
+
+export function generateStaticParams() {
+	return getStaticParams()
 }
