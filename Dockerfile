@@ -16,10 +16,6 @@ COPY . .
 # Build the Next.js app
 RUN npm run build
 
-# Copy the standalone public & static folder
-COPY public .next/standalone/
-COPY .next/static .next/standalone/.next/
-
 # Set the environment
 ENV NODE_ENV=production
 
