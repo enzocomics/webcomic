@@ -5,13 +5,12 @@ import { I18nProviderClient } from "@/lib/i18n/client"
 import { getStaticParams } from "@/lib/i18n/server"
 
 // STYLES 
+import { ThemeProvider } from "next-themes"
 import { copy, display } from "@/styles/fonts"
 import "@/styles/global.css"
 
-/**
- * # Root Layout
- * 
- * The homepage base layout that persists across all routes.
+/**-----------------------------------
+ * Root Layout. Wraps the entire site.
  * 
  */
 
@@ -25,12 +24,19 @@ export default async function RootLayout({ params, children }: {
 
 	// OUTPUT
 	return (
-		<html className={`scroll-smooth ${copy.variable} ${display.variable}`}>
-			<body>
-				{/* NEXT-INTERNATIONAL PROVIDER */}
-				<I18nProviderClient locale={locale}>
-					{children}
-				</I18nProviderClient>
+		<html
+			className={`scroll-smooth ${copy.variable} ${display.variable}`}
+			data-mode="system"
+			suppressHydrationWarning
+		>
+			<body className="bg-base-100">
+				{/* NEXT-THEMES PROVIDER */}
+				<ThemeProvider attribute="data-mode">
+					{/* NEXT-INTERNATIONAL PROVIDER */}
+					<I18nProviderClient locale={locale}>
+						{children}
+					</I18nProviderClient>
+				</ThemeProvider>
 			</body>
 		</html>
 	)
