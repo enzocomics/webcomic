@@ -30,7 +30,7 @@ export default async function RootLayout({ params, children }: {
 			lang={locale}
 			suppressHydrationWarning
 		>
-			<body className="bg-base-100">
+			<body className="bg-base-100 text-base-content">
 				{/* NEXT-THEMES PROVIDER */}
 				<ThemeProvider attribute="data-mode">
 					{/* NEXT-INTERNATIONAL PROVIDER */}
