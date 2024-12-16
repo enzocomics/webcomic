@@ -27,6 +27,7 @@ export default async function RootLayout({ params, children }: {
 		<html
 			className={`scroll-smooth ${copy.variable} ${display.variable}`}
 			data-mode="system"
+			lang={locale}
 			suppressHydrationWarning
 		>
 			<body className="bg-base-100">
