@@ -1,7 +1,7 @@
 {
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build && copyfiles -r public .next/standalone/ && copyfiles -r .next/static .next/standalone/.next/",
+		"build": "next build && cp -r .next/static .next/standalone/.next/ && cp -r public .next/standalone/",
 		"start": "next start",
 		"lint": "next lint"
 	},
